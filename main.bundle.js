@@ -367,7 +367,7 @@ var SkillsComponent = (function () {
             { name: 'CSS3', level: 8 },
             { name: 'JavaScript', level: 8 },
             { name: 'ReactJS', level: 2 },
-            { name: 'AngularJS', level: 5 },
+            { name: 'AngularJS', level: 6 },
         ];
     }
     SkillsComponent.prototype.ngOnInit = function () {
@@ -496,7 +496,7 @@ module.exports = "<nav class=\"navbar navbar-default\">\n  <div class=\"containe
 /***/ 632:
 /***/ (function(module, exports) {
 
-module.exports = "<section id=\"skills\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <h2 class=\"title\">Skills</h2>\n      <div class=\"info\">\n        <div class=\"skill\" *ngFor=\"let skill of skills\">\n          <div class=\"col-xs-12 col-sm-6 name\">\n            <p>{{ skill.name }}</p>\n          </div>\n\n          <div class=\"col-xs-12 col-sm-6 level\">\n            <span [ngClass]=\"skill.level > 1 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level > 2 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level > 3 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level > 4 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level > 5 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level > 6 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level > 7 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level > 8 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level > 9 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level > 10 ? 'filled-circle': 'circle'\"></span>\n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</section>\n\n"
+module.exports = "<section id=\"skills\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <h2 class=\"title\">Skills</h2>\n      <div class=\"info\">\n        <div class=\"skill\" *ngFor=\"let skill of skills\">\n          <div class=\"col-xs-12 col-sm-6 name\">\n            <p>{{ skill.name }}</p>\n          </div>\n\n          <div class=\"col-xs-12 col-sm-6 level\">\n            <span [ngClass]=\"skill.level >= 1 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level >= 2 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level >= 3 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level >= 4 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level >= 5 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level >= 6 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level >= 7 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level >= 8 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level >= 9 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level >= 10 ? 'filled-circle': 'circle'\"></span>\n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</section>\n\n"
 
 /***/ }),
 
