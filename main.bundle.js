@@ -363,11 +363,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var SkillsComponent = (function () {
     function SkillsComponent() {
         this.skills = [
-            { name: 'HTML5', level: Array(15) },
-            { name: 'CSS3', level: Array(7) },
-            { name: 'JavaScript', level: Array(9) },
-            { name: 'ReactJS', level: Array(2) },
-            { name: 'AngularJS', level: Array(5) },
+            { name: 'HTML5', level: 9 },
+            { name: 'CSS3', level: 8 },
+            { name: 'JavaScript', level: 8 },
+            { name: 'ReactJS', level: 2 },
+            { name: 'AngularJS', level: 5 },
         ];
     }
     SkillsComponent.prototype.ngOnInit = function () {
@@ -447,7 +447,7 @@ module.exports = ".navbar {\n  background: transparent;\n  position: absolute;\n
 /***/ 625:
 /***/ (function(module, exports) {
 
-module.exports = "#skills {\n  padding: 2% 0;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }\n  #skills .info .name {\n    font-weight: bold;\n    letter-spacing: 1px; }\n  #skills .info .level .circle {\n    border-radius: 100%;\n    display: inline-block;\n    background: #9a9a9a;\n    margin: 0 3px; }\n\n@media screen and (min-width: 768px) {\n  #skills .info .skill {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex; }\n  #skills .info .name {\n    font-size: 30px;\n    text-align: right; }\n  #skills .info .level {\n    margin: auto; }\n    #skills .info .level .circle {\n      width: 20px;\n      height: 20px; } }\n\n@media screen and (max-width: 767px) {\n  #skills .info {\n    text-align: center; }\n    #skills .info .name {\n      font-size: 22px; }\n    #skills .info .level {\n      margin-bottom: 20px; }\n      #skills .info .level .circle {\n        width: 18px;\n        height: 18px; } }\n\n@media screen and (max-width: 500px) {\n  #skills .info .name {\n    font-size: 18px; }\n  #skills .info .level {\n    margin-bottom: 15px; }\n    #skills .info .level .circle {\n      width: 15px;\n      height: 15px; } }\n"
+module.exports = "#skills {\n  padding: 2% 0;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }\n  #skills .info .name {\n    font-weight: bold;\n    letter-spacing: 1px; }\n  #skills .info .level .circle, #skills .info .level .filled-circle {\n    border-radius: 100%;\n    display: inline-block;\n    background: #9a9a9a;\n    margin: 0 3px; }\n  #skills .info .level .filled-circle {\n    background: #333333; }\n\n@media screen and (min-width: 768px) {\n  #skills .info .skill {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex; }\n  #skills .info .name {\n    font-size: 30px;\n    text-align: right; }\n  #skills .info .level {\n    margin: auto; }\n    #skills .info .level .circle, #skills .info .level .filled-circle {\n      width: 20px;\n      height: 20px; } }\n\n@media screen and (max-width: 767px) {\n  #skills .info {\n    text-align: center; }\n    #skills .info .name {\n      font-size: 22px; }\n    #skills .info .level {\n      margin-bottom: 20px; }\n      #skills .info .level .circle, #skills .info .level .filled-circle {\n        width: 18px;\n        height: 18px; } }\n\n@media screen and (max-width: 500px) {\n  #skills .info .name {\n    font-size: 18px; }\n  #skills .info .level {\n    margin-bottom: 15px; }\n    #skills .info .level .circle, #skills .info .level .filled-circle {\n      width: 15px;\n      height: 15px; } }\n"
 
 /***/ }),
 
@@ -496,7 +496,7 @@ module.exports = "<nav class=\"navbar navbar-default\">\n  <div class=\"containe
 /***/ 632:
 /***/ (function(module, exports) {
 
-module.exports = "<section id=\"skills\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <h2 class=\"title\">Skills</h2>\n      <div class=\"info\">\n        <div class=\"skill\" *ngFor=\"let skill of skills\">\n          <div class=\"col-xs-12 col-sm-6 name\">\n            <p>{{ skill.name }}</p>\n          </div>\n\n          <div class=\"col-xs-12 col-sm-6 level\">\n            <span class=\"circle\" *ngFor=\"let item of skill.level | slice:0:10\">{{item}}</span>\n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</section>\n\n"
+module.exports = "<section id=\"skills\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <h2 class=\"title\">Skills</h2>\n      <div class=\"info\">\n        <div class=\"skill\" *ngFor=\"let skill of skills\">\n          <div class=\"col-xs-12 col-sm-6 name\">\n            <p>{{ skill.name }}</p>\n          </div>\n\n          <div class=\"col-xs-12 col-sm-6 level\">\n            <span [ngClass]=\"skill.level > 1 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level > 2 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level > 3 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level > 4 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level > 5 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level > 6 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level > 7 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level > 8 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level > 9 ? 'filled-circle': 'circle'\"></span>\n            <span [ngClass]=\"skill.level > 10 ? 'filled-circle': 'circle'\"></span>\n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</section>\n\n"
 
 /***/ }),
 
