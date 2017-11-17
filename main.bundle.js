@@ -31,7 +31,7 @@ if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["a" /* enableProdMode */])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=E:/task/angular-src/src/main.js.map
+//# sourceMappingURL=E:/port/src/main.js.map
 
 /***/ }),
 
@@ -65,7 +65,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=E:/task/angular-src/src/app.component.js.map
+//# sourceMappingURL=E:/port/src/app.component.js.map
 
 /***/ }),
 
@@ -134,7 +134,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=E:/task/angular-src/src/app.module.js.map
+//# sourceMappingURL=E:/port/src/app.module.js.map
 
 /***/ }),
 
@@ -158,11 +158,11 @@ var AboutComponent = (function () {
     function AboutComponent() {
         this.goals = {
             'title': 'Goals',
-            'text': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur doloremque dolorum enim et facere natus, nihil placeat provident rerum vitae. Ad asperiores corporis eaque enim ipsa, ipsam iure laudantium modi nam nostrum optio porro quo rem repudiandae rerum sapiente sit sunt velit voluptatibus voluptatum. A accusantium architecto atque error ipsa laborum magnam porro recusandae, unde ut. Aspernatur exercitationem maxime necessitatibus.'
+            'text': 'There are certain goals that I have. The main one is to find a job. When I was in my first year of tuition, I visited GlobalLogic\'s office and I was delighted. I set a goal to become a part of the company. Day by day I try to learn something new and practice, practice, practice. I have finished GlobalLogic\'s BaseCamp in Lviv. It was a great experience for me.'
         };
         this.dreams = {
             'title': 'Dreams',
-            'text': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A delectus esse id impedit in ipsam ipsum iure, maxime modi nisi porro quaerat quam, rerum sint soluta tempora velit. Aliquid distinctio eos maiores optio possimus reiciendis repellat reprehenderit soluta suscipit vel. Adipisci beatae consequatur deserunt dolor dolore eaque error excepturi fuga illo iusto, natus neque pariatur quam soluta tempora tempore velit.'
+            'text': 'As everyone I have dreams. Like a web-developer I want to become a good technician and I develop myself step by step. I do everything to make dreams come true. In every situation I try to do my best. I\'m a studious and single-minded person and I believe that I can become a good specialist.'
         };
     }
     AboutComponent.prototype.ngOnInit = function () {
@@ -177,7 +177,7 @@ var AboutComponent = (function () {
     ], AboutComponent);
     return AboutComponent;
 }());
-//# sourceMappingURL=E:/task/angular-src/src/about.component.js.map
+//# sourceMappingURL=E:/port/src/about.component.js.map
 
 /***/ }),
 
@@ -225,7 +225,7 @@ var ContactComponent = (function () {
     ], ContactComponent);
     return ContactComponent;
 }());
-//# sourceMappingURL=E:/task/angular-src/src/contact.component.js.map
+//# sourceMappingURL=E:/port/src/contact.component.js.map
 
 /***/ }),
 
@@ -265,7 +265,7 @@ var FooterComponent = (function () {
     ], FooterComponent);
     return FooterComponent;
 }());
-//# sourceMappingURL=E:/task/angular-src/src/footer.component.js.map
+//# sourceMappingURL=E:/port/src/footer.component.js.map
 
 /***/ }),
 
@@ -304,7 +304,7 @@ var HomeComponent = (function () {
     ], HomeComponent);
     return HomeComponent;
 }());
-//# sourceMappingURL=E:/task/angular-src/src/home.component.js.map
+//# sourceMappingURL=E:/port/src/home.component.js.map
 
 /***/ }),
 
@@ -340,7 +340,7 @@ var NavbarComponent = (function () {
     ], NavbarComponent);
     return NavbarComponent;
 }());
-//# sourceMappingURL=E:/task/angular-src/src/navbar.component.js.map
+//# sourceMappingURL=E:/port/src/navbar.component.js.map
 
 /***/ }),
 
@@ -382,7 +382,7 @@ var SkillsComponent = (function () {
     ], SkillsComponent);
     return SkillsComponent;
 }());
-//# sourceMappingURL=E:/task/angular-src/src/skills.component.js.map
+//# sourceMappingURL=E:/port/src/skills.component.js.map
 
 /***/ }),
 
@@ -398,7 +398,7 @@ var SkillsComponent = (function () {
 var environment = {
     production: false
 };
-//# sourceMappingURL=E:/task/angular-src/src/environment.js.map
+//# sourceMappingURL=E:/port/src/environment.js.map
 
 /***/ }),
 
